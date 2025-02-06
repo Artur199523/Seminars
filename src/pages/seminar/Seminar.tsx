@@ -11,9 +11,14 @@ import styles from "./Seminar.module.scss"
 
 const Seminar: React.FC = () => {
    const { id } = useParams()
-   const { setCurrentModal } = useModalContext(MODAL_CONTEXT_KEY.SEMINAR)
+   const { setCurrentModal, setData } = useModalContext(MODAL_CONTEXT_KEY.SEMINAR)
 
    const { data, isSuccess } = useGetSeminarQuery(id)
+
+   const edit = () => {
+      setCurrentModal(SEMINAR_MODALS.SEMINAR_UPDATE)
+      setData(data)
+   }
 
    return (
       <React.Fragment>
@@ -31,7 +36,7 @@ const Seminar: React.FC = () => {
                      </p>
                   </div>
                   <div className={styles.seminar__info_btns}>
-                     <Button onClick={() => setCurrentModal(SEMINAR_MODALS.SEMINAR_UPDATE)}>Обновлять</Button>
+                     <Button onClick={edit}>Обновлять</Button>
                      <Button onClick={() => setCurrentModal(SEMINAR_MODALS.SEMINAR_DELETE)}>Удалить</Button>
                   </div>
                </div>

@@ -1,0 +1,31 @@
+@use "assets/utils/colors" as colors;
+
+.textarea_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  &__field {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  &.primary {
+    label {
+      color: colors.$text-light;
+    }
+
+    input {
+      border: 1px solid colors.$text-light;
+
+      &:focus {
+        border-color: colors.$accent-muted;
+      }
+    }
+  }
+}

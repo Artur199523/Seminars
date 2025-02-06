@@ -1,5 +1,7 @@
 export { default as ErrorContainer } from "./errorContainer/ErrorContainer"
 export { default as SeminarCard } from "./seminarCard/SeminarCard"
+export { default as Textarea } from "./textarea/Textarea"
 export { default as Button } from "./button/Button"
 export { default as Modal } from "./modal/Modal"
 export { default as Toast } from "./toast/Toast"
+export { default as Input } from "./input/Input"

@@ -9,7 +9,10 @@
   &_update_modal_content {
 
     &__inputs {
-      margin: 25px;
+      gap: 15px;
+      display: flex;
+      margin: 25px 0;
+      flex-direction: column;
     }
 
     &__btns {

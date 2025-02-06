@@ -22,13 +22,6 @@ export const routes: RoutesITF[] = [
       label: "Home",
    },
    {
-      path: "/seminars",
-      element: <Seminars />,
-      layout: DefaultLayouts,
-      isShowInNav: true,
-      label: "Seminars",
-   },
-   {
       path: "/seminar/:id",
       element: (
          <ModalProvider type={MODAL_CONTEXT_KEY.SEMINAR}>

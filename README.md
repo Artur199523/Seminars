@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# 📚 Seminar Management Application
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 🚀 Overview
 
-In the project directory, you can run:
+The Seminar Management Application is a React-based web application designed for managing and organizing seminars
+efficiently. It incorporates reusable components and hooks, as well as a centralized state management system using Redux
+Toolkit. The application is built using modern web development tools and practices, ensuring optimal performance and
+maintainability.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+🧩 Reusable Components: Modular components such as Textarea, modals like UpdateSeminarModal, and context providers (ModalProvider) make the application extensible and scalable.\
+🎛️ State Management: Centralized application state using Redux Toolkit with RTK Query for state synchronization with backend APIs.\
+🖊️ Form Enhancements: Custom hooks such as useModalContext and utility services streamline processes and interactions.\
+⚙️ Codebase Organization: A clean folder structure with organized types, utilities, and API layers.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Technology Stack
 
-### `npm test`
+React , TypeScript , Redux Toolkit , Sass , React Router , Prettier , React Toastify
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 📂 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+````
+src/
+├── assets/
+│   ├── styles/
+│   ├── svg/
+│   ├── utils/    
+├── components/               # Reusable UI components
+│   ├── atoms/                # Small building blocks
+│   ├── molecules/            # Combination of atoms
+│   └── organisms/            # Complex UI sections
+│       └── seminar/
+│           └── modals/       # Seminar modals (e.g., UpdateSeminarModal)
+├── hooks/                    # Custom React hooks
+├── layouts/                  # Layout utilities and providers
+│   └── provider/             # Context providers (e.g., ModalProvider)
+├── pages/                    # Page-level components
+│   └── seminar/
+│   └── seminars/  
+├── routes/ 
+├── store/                    # Redux Toolkit store
+│   └── seminars/             # API and state logic for seminars
+├── utils/                    # Utility methods and helpers
+│   └── messages/          
+│   └── enums/
+│   └── helpers/
+│   └── mocks/      
+├── styles/                   # SCSS stylesheets
+````
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get the project up and running locally, follow these steps:\
+ 1.Clone the Repository:
+```bash
+    git clone https://github.com/Artur199523/Seminars.git
+    cd  Seminar
+```
 
-### `npm run eject`
+2.Install Dependencies: Make sure Node.js is installed. Then, run:
+```bash
+    npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+3.Running the Development Server and JSON Server:
+```bash
+    npm dev
+```

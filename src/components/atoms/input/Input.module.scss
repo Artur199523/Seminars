@@ -1,0 +1,37 @@
+@use "assets/utils/colors" as colors;
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &__input_label {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  &__field {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+
+    &:focus {
+      border-color: colors.$accent-muted;
+      outline: none;
+    }
+  }
+
+  &.primary {
+    label {
+      color: colors.$text-light;
+    }
+
+    input {
+      border: 1px solid colors.$text-light;
+
+      &:focus {
+        border-color: colors.$accent-muted;
+      }
+    }
+  }
+}

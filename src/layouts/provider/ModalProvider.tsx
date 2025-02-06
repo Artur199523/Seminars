@@ -17,6 +17,9 @@ export const ModalProvider: React.FC<ModalProviderProps> = ({ type, children }) 
    const ModalContext = ModalContexts[type]
 
    const [currentModal, setCurrentModal] = useState<string>("")
+   const [data, setData] = useState<any>(null)
 
-   return <ModalContext.Provider value={{ currentModal, setCurrentModal }}>{children}</ModalContext.Provider>
+   return (
+      <ModalContext.Provider value={{ currentModal, setCurrentModal, data, setData }}>{children}</ModalContext.Provider>
+   )
 }
