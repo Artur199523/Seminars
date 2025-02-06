@@ -68,5 +68,5 @@ To get the project up and running locally, follow these steps:\
 
 3.Running the Development Server and JSON Server:
 ```bash
-    npm dev
+    npm run dev
 ```
