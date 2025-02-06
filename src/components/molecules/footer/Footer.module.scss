@@ -1,0 +1,11 @@
+@use "src/assets/utils/colors" as colors;
+
+footer {
+  background-color: colors.$bg-secondary;
+
+  p{
+    padding: 15px 0;
+    text-align: center;
+    color: colors.$text-light;
+  }
+}

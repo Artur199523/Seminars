@@ -1,0 +1,21 @@
+.seminar {
+  &_delete_modal_content {
+    gap: 10px;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+  }
+
+  &_update_modal_content {
+
+    &__inputs {
+      margin: 25px;
+    }
+
+    &__btns {
+      gap: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

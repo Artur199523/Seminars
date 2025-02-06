@@ -1,0 +1,46 @@
+@use "src/assets/utils/variables" as variables;
+@use "src/assets/utils/colors" as colors;
+@use "src/assets/utils/mixins" as mixins;
+
+.header {
+  background-color: colors.$bg-secondary;
+  padding: 5px 20px;
+
+  @include mixins.respond-max(variables.$breakpoint-small) {
+    padding: 5px 10px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 15px;
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: colors.$text-light;
+
+          &:hover {
+            color: colors.$text-muted;
+          }
+        }
+      }
+    }
+  }
+}

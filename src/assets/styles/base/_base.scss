@@ -1,0 +1,19 @@
+body {
+  background: white;
+
+  main {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    padding: 0 24px;
+    max-width: 1400px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

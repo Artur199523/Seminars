@@ -1,0 +1,37 @@
+@use "assets/utils/colors" as colors;
+
+.custom_button {
+  all: unset;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: inherit;
+  display: inline-block;
+  text-decoration: none;
+  color: colors.$text-light;
+  background-color: colors.$bg-primary;
+  transition: background-color 0.3s ease;
+
+  &.primary {
+      background-color: colors.$bg-primary;
+      color: colors.$text-light;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.44);
+    }
+  }
+
+  &.secondary {
+    background-color: colors.$text-light;
+    color: colors.$bg-primary;
+
+    &:hover {
+      background-color: #cdc6c6;
+    }
+  }
+}

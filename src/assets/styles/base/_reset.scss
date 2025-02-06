@@ -1,0 +1,82 @@
+// Reset all elements
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Remove default body margin
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Make images easier to work with
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+// Inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// Remove default button styles
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+// Remove default list styles
+ul,
+ol {
+  list-style: none;
+}
+
+// A more readable line height
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+// Improve media defaults
+video {
+  display: block;
+  max-width: 100%;
+}
+
+// Remove default blockquote styles
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+// Remove default fieldset styles
+fieldset {
+  border: 0;
+  padding: 0;
+}

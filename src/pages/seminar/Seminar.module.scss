@@ -1,0 +1,43 @@
+@use "assets/utils/variables" as variables;
+@use "assets/utils/mixins" as mixins;
+
+.seminar {
+  gap: 40px;
+  display: flex;
+  min-height: 730px;
+
+  img {
+    border-radius: 25px;
+
+    @include mixins.respond-min(variables.$breakpoint-large) {
+      min-width: 750px;
+    }
+  }
+
+  &__info {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__details {
+      margin-top: 25px;
+
+      span {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    &_btns {
+      gap: 15px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

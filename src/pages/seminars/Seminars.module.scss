@@ -1,0 +1,12 @@
+@use "assets/utils/mixins" as mixins;
+@use "assets/utils/variables" as variables;
+
+.seminars {
+  gap: 25px;
+  padding: 50px;
+  @include mixins.grid-display(3);
+
+  @include mixins.respond-max(variables.$breakpoint-large){
+    @include mixins.grid-display(2);
+  }
+}
